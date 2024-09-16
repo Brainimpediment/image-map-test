@@ -1,11 +1,14 @@
-# NOT MAINTAINED
-
-## This repository is not maintened anymore (and since a long time).
-
-Sorry about all unanswered issues, I don't have time to maintain this package.
-If I had chance, I would rewrite this from scratch (maybe using a more typed and native approach).
-
-Feel free to fork and enhance that libray if you need.
+# HAY DO THIS IF IT ISNT WORKIIING
+```
+node -v
+```
+it should be 10 or omething. for this it neeeds to be 6.
+```
+nvm install 6
+nvm use 6
+```
+look [here](https://github.com/raineorshine/npm-check-updates/issues/363) for more info... or look at ur drafts in ur email REMEMMEBR u put stuff there. Clever clever...
+OH YEA IT RUNS IN LOCALHOST 8000 BTW.
 
 # react-image-mapper
 

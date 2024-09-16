@@ -17,6 +17,7 @@
     "classnames": "^2.1.2",
     "prop-types": "^15.6.0",
     "react-fast-compare": "^2.0.4",
+    "react-image-mapper": "^0.0.15",
     "require-dir": "1.2.0"
   },
   "devDependencies": {
@@ -42,7 +43,11 @@
   "browserify-shim": {
     "react": "global:React"
   },
+  "overrides": {
+    "graceful-fs": "^4.2.11"
+  },
   "scripts": {
+    "preinstall": "npx force-resolutions",
     "build": "gulp clean && NODE_ENV=production gulp build",
     "examples": "gulp dev:server",
     "lint": "eslint ./; true",
