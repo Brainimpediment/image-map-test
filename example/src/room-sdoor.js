@@ -3,21 +3,19 @@ var ReactDOM = require("react-dom");
 var ImageMapper = require("react-image-mapper");
 
 var MAP = {
-	name: "my-map",
+	name: "sdoor-map",
 	areas: [
 		{
 			name: "1",
 			shape: "poly",
-			coords: [438,190,440,235,451,248,457,247,460,210,555,209,555,236,561,248,567,248,570,207,576,207,575,187,438,190],
+			coords: [324,16,295,16,295,-1,324,-1,324,16],
 			preFillColor: "rgb(255,255,255,0.3)",
-			lineWidth: 3,
-			strokeColor: "#000d0b",
-			href: "test.html"
+			href: "https://github.com/coldiary/react-image-mapper"
 		},
 		{
 			name: "2",
 			shape: "poly",
-			coords: [617,115,685,171,685,135,647,113,617,115],
+			coords: [2,315,681,315,681,385,2,385,2,315],
 			preFillColor: "rgb(255,255,255,0.3)",
 			lineWidth: 3,
 			strokeColor: "#000d0b"
@@ -25,23 +23,7 @@ var MAP = {
 		{
 			name: "3",
 			shape: "poly",
-			coords: [245,308,271,281,312,265,349,261,376,261,406,263,430,276,454,295,461,308,461,334,444,346,407,350,291,351,260,347,239,334,245,308],
-			preFillColor: "rgb(255,255,255,0.3)",
-			lineWidth: 3,
-			strokeColor: "#000d0b"
-		},
-		{
-			name: "4",
-			shape: "poly",
-			coords: [168,26,468,26,468,135,168,135,168,26],
-			preFillColor: "rgb(255,255,255,0.3)",
-			lineWidth: 3,
-			strokeColor: "#000d0b"
-		},
-		{
-			name: "5",
-			shape: "poly",
-			coords: [0,0,0,331,103,246,99,30,32,1,0,0],
+			coords: [619,232,644,232,644,342,619,342,619,232],
 			preFillColor: "rgb(255,255,255,0.3)",
 			lineWidth: 3,
 			strokeColor: "#000d0b"
@@ -49,7 +31,7 @@ var MAP = {
 	]
 };
 
-var URL = "https://i.imgur.com/RlMdF6u.png";
+var URL = "https://i.imgur.com/R52G9pR.png";
 
 var App = React.createClass({
 	getInitialState() {
@@ -60,7 +42,8 @@ var App = React.createClass({
 	},
 	clicked(area) {
 		this.setState({
-			msg: console.log(`You clicked ${area.shape} ${area.name}!`)
+			msg: console.log(`You clicked ${area.shape} ${area.name}!`),
+			href: 'https://github.com/coldiary/react-image-mapper'
 		});
 	},
 	clickedOutside(evt) {

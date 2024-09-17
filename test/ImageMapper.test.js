@@ -6,7 +6,7 @@ import ImageMapper from '../src/ImageMapper';
 
 configure({ adapter: new Adapter() });
 
-const URL = 'https://c1.staticflickr.com/5/4052/4503898393_303cfbc9fd_b.jpg';
+const URL = 'https://i.imgur.com/RlMdF6u.png';
 const MAP = {
 	name: 'my-map',
 	areas: [
